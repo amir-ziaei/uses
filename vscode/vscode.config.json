@@ -1,0 +1,102 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": [
+    "source.fixAll.eslint",
+    "source.fixAll.prettier"
+  ],
+  "editor.inlineSuggest.enabled": true,
+  "editor.detectIndentation": true,
+  "editor.lightbulb.enabled": false,
+  "editor.fontFamily": "'Dank Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": false,
+  "editor.fontSize": 16,
+  "editor.tabSize": 2,
+  "editor.rulers": [80],
+  "editor.hover.enabled": true,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.smoothScrolling": true,
+  "editor.formatOnPaste": false,
+  "window.zoomLevel": 1,
+  "editor.minimap.enabled": false,
+  "editor.snippetSuggestions": "top",
+  "editor.wordBasedSuggestions": false,
+  "editor.suggestSelection": "first",
+  "editor.suggest.showKeywords": false,
+  "editor.suggest.localityBonus": true,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.renderWhitespace": "boundary",
+  "editor.glyphMargin": false,
+  "editor.folding": false,
+  // "editor.lineNumbers": "off",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": []
+  },
+  "explorer.openEditors.visible": 0,
+  "explorer.confirmDragAndDrop": false,
+  "breadcrumbs.enabled": false,
+  "workbench.colorTheme": "Night Owl",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "workbench.activityBar.visible": false,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": false,
+  "workbench.editor.limit.value": 6,
+  "workbench.editor.tabCloseButton": "off",
+  "workbench.editor.showTabs": false,
+  "workbench.statusBar.visible": false,
+  "files.exclude": {
+    "USE_GITIGNORE": true
+  },
+  // "files.associations": {
+  //   "*.md": "mdx"
+  // }
+  "files.defaultLanguage": "{activeEditorLanguage}",
+  "javascript.validate.enable": false, // maybe enable later?
+  "javascript.suggest.autoImports": true, // might be slow?
+  "typescript.suggest.autoImports": true, // might be slow?
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.build": true,
+    "**/.gh-pages": true
+  },
+  "debug.javascript.codelens.npmScripts": "never",
+  "terminal.integrated.shellArgs.osx": ["-l"],
+  "terminal.integrated.scrollback": 100000, // might be slow? https://github.com/Microsoft/vscode/issues/63452#issuecomment-441796199
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "grunt.autoDetect": "off",
+  "gulp.autoDetect": "off",
+  "npm.runSilent": true,
+  "npm.packageManager": "npm",
+  "eslint.packageManager": "npm",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "prettier.printWidth": 80,
+  "prettier.bracketSpacing": true,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.arrowParens": "avoid",
+  "prettier.useEditorConfig": false,
+  "local-history.absolute": true,
+  "local-history.path": "~/.vscode-history",
+  "spellright.language": ["en"],
+  "spellright.documentTypes": ["markdown", "plaintext", "mdx"],
+  "spellright.parserByClass": {
+    "mdx": {
+      "parser": "markdown"
+    }
+  },
+  "turboConsoleLog.quote": "'",
+  "turboConsoleLog.includeFileNameAndLineNum": false
+  // "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+}
