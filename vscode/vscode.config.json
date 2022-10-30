@@ -12,7 +12,13 @@
   "editor.fontLigatures": false,
   "editor.fontSize": 16,
   "editor.tabSize": 2,
-  "editor.rulers": [80],
+  "editor.rulers": [
+    {
+      "column": 80,
+      "color": "#0E273B"
+    },
+    100
+  ],
   "editor.hover.enabled": true,
   "editor.cursorSmoothCaretAnimation": true,
   "editor.smoothScrolling": true,
@@ -29,7 +35,6 @@
   "editor.renderWhitespace": "boundary",
   "editor.glyphMargin": false,
   "editor.folding": false,
-  // "editor.lineNumbers": "off",
   "editor.tokenColorCustomizations": {
     "textMateRules": []
   },
@@ -46,16 +51,17 @@
   "workbench.editor.tabCloseButton": "off",
   "workbench.editor.showTabs": false,
   "workbench.statusBar.visible": false,
+  "workbench.panel.defaultLocation": "right",
   "files.exclude": {
     "USE_GITIGNORE": true
   },
-  // "files.associations": {
-  //   "*.md": "mdx"
-  // }
+  "files.associations": {
+    "*.md": "mdx"
+  },
   "files.defaultLanguage": "{activeEditorLanguage}",
   "javascript.validate.enable": false, // maybe enable later?
-  "javascript.suggest.autoImports": true, // might be slow?
-  "typescript.suggest.autoImports": true, // might be slow?
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
   "search.exclude": {
     "**/node_modules": true,
     "**/bower_components": true,
@@ -66,7 +72,6 @@
     "**/.gh-pages": true
   },
   "debug.javascript.codelens.npmScripts": "never",
-  "terminal.integrated.shellArgs.osx": ["-l"],
   "terminal.integrated.scrollback": 100000, // might be slow? https://github.com/Microsoft/vscode/issues/63452#issuecomment-441796199
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "grunt.autoDetect": "off",
@@ -80,12 +85,22 @@
     "typescript",
     "typescriptreact"
   ],
-  "prettier.printWidth": 80,
   "prettier.bracketSpacing": true,
+  "prettier.embeddedLanguageFormatting": "auto",
+  "prettier.endOfLine": "lf",
+  "prettier.htmlWhitespaceSensitivity": "css",
+  "prettier.insertPragma": false,
+  "prettier.jsxSingleQuote": false,
+  "prettier.printWidth": 80,
+  "prettier.proseWrap": "always",
+  "prettier.quoteProps": "as-needed",
+  "prettier.requirePragma": false,
   "prettier.semi": false,
+  "prettier.singleAttributePerLine": false,
   "prettier.singleQuote": true,
+  "prettier.tabWidth": 2,
   "prettier.trailingComma": "all",
-  "prettier.arrowParens": "avoid",
+  "prettier.useTabs": false,
   "prettier.useEditorConfig": false,
   "local-history.absolute": true,
   "local-history.path": "~/.vscode-history",
@@ -97,6 +112,7 @@
     }
   },
   "turboConsoleLog.quote": "'",
-  "turboConsoleLog.includeFileNameAndLineNum": false
+  "turboConsoleLog.includeFileNameAndLineNum": false,
+  "editor.stickyScroll.enabled": true
   // "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 }
