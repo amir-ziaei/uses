@@ -16,6 +16,7 @@ alias nrd='npm run dev'
 alias nrs='npm run start'
 alias nrb='npm run build'
 alias nrt='npm run test'
+alias nrv='npm run validate'
 
 # git
 alias gs='git status'
