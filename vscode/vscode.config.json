@@ -1,82 +1,54 @@
 {
-  "window.zoomLevel": 1,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.suggestSelection": "recentlyUsed"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.suggestSelection": "recentlyUsed"
+  },
+  "breadcrumbs.enabled": false,
+  "debug.javascript.codelens.npmScripts": "never",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.codeActionsOnSave": ["source.fixAll.eslint"],
+  "editor.cursorBlinking": "solid",
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": [
-    "source.fixAll.eslint",
-    "source.fixAll.prettier"
-  ],
-  "editor.inlineSuggest.enabled": true,
   "editor.detectIndentation": true,
-  "editor.lightbulb.enabled": false,
+  "editor.folding": false,
   "editor.fontFamily": "'Dank Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": false,
-  "editor.fontSize": 16,
-  "editor.tabSize": 2,
+  "editor.fontSize": 18,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "editor.hover.enabled": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.lightbulb.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderWhitespace": "boundary",
   "editor.rulers": [
     {
-      "column": 80,
-      "color": "#0E273B"
+      "color": "#0E273B",
+      "column": 80
     },
     100
   ],
-  "editor.hover.enabled": true,
-  "editor.cursorSmoothCaretAnimation": "on",
   "editor.smoothScrolling": true,
-  "editor.formatOnPaste": false,
-  "editor.minimap.enabled": false,
   "editor.snippetSuggestions": "top",
-  "editor.wordBasedSuggestions": false,
-  "editor.suggestSelection": "first",
-  "editor.suggest.showKeywords": false,
+  "editor.stickyScroll.enabled": true,
   "editor.suggest.localityBonus": true,
-  "editor.acceptSuggestionOnCommitCharacter": false,
-  "editor.acceptSuggestionOnEnter": "off",
-  "editor.renderWhitespace": "boundary",
-  "editor.folding": false,
+  "editor.suggest.showKeywords": false,
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
   "editor.tokenColorCustomizations": {
     "textMateRules": []
   },
-  "explorer.openEditors.visible": 0,
-  "explorer.confirmDragAndDrop": false,
-  "breadcrumbs.enabled": false,
-  "workbench.colorTheme": "Night Owl",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.startupEditor": "none",
-  "workbench.activityBar.visible": false,
-  "workbench.editor.limit.enabled": true,
-  "workbench.editor.limit.perEditorGroup": false,
-  "workbench.editor.limit.value": 6,
-  "workbench.editor.tabCloseButton": "off",
-  "workbench.editor.showTabs": false,
-  "workbench.statusBar.visible": false,
-  "workbench.panel.defaultLocation": "right",
-  "files.exclude": {
-    "USE_GITIGNORE": true
-  },
-  // "files.associations": {
-  //   "*.md": "mdx"
-  // },
-  "files.defaultLanguage": "{activeEditorLanguage}",
-  "javascript.validate.enable": false, // maybe enable later?
-  "javascript.suggest.autoImports": true,
-  "typescript.suggest.autoImports": true,
-  "search.exclude": {
-    "**/node_modules": true,
-    "**/bower_components": true,
-    "**/coverage": true,
-    "**/dist": true,
-    "**/build": true,
-    "**/.build": true,
-    "**/.gh-pages": true
-  },
-  "debug.javascript.codelens.npmScripts": "never",
-  "terminal.integrated.scrollback": 100000, // might be slow? https://github.com/Microsoft/vscode/issues/63452#issuecomment-441796199
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "grunt.autoDetect": "off",
-  "gulp.autoDetect": "off",
-  "npm.runSilent": true,
-  "npm.packageManager": "npm",
+  "editor.wordBasedSuggestions": false,
+  "emmet.showAbbreviationSuggestions": false,
+  "emmet.showExpandedAbbreviation": "never",
   "eslint.packageManager": "npm",
   "eslint.validate": [
     "javascript",
@@ -84,6 +56,36 @@
     "typescript",
     "typescriptreact"
   ],
+  "explorer.confirmDragAndDrop": false,
+  "explorer.fileNesting.patterns": {
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.ts": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml",
+    "tsconfig.json": "tsconfig.*.json"
+  },
+  "explorer.openEditors.visible": 0,
+  // "files.associations": {
+  //   "*.md": "mdx"
+  // },
+  "files.defaultLanguage": "{activeEditorLanguage}",
+  "files.exclude": {
+    "USE_GITIGNORE": true
+  },
+  "git.autofetch": true,
+  "grunt.autoDetect": "off",
+  "gulp.autoDetect": "off",
+  // maybe enable later?
+  "javascript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "javascript.validate.enable": false,
+  "local-history.absolute": true,
+  "local-history.path": "~/.vscode-history",
+  "markdown-preview-enhanced.previewTheme": "atom-light.css",
+  "npm.packageManager": "npm",
+  "npm.runSilent": true,
+  "playwright.reuseBrowser": true,
   "prettier.bracketSpacing": true,
   "prettier.embeddedLanguageFormatting": "auto",
   "prettier.endOfLine": "lf",
@@ -99,28 +101,43 @@
   "prettier.singleQuote": true,
   "prettier.tabWidth": 2,
   "prettier.trailingComma": "all",
-  "prettier.useTabs": false,
   "prettier.useEditorConfig": true,
-  "local-history.absolute": true,
-  "local-history.path": "~/.vscode-history",
-  "spellright.language": ["en"],
+  "prettier.useTabs": false,
+  "search.exclude": {
+    "**/.build": true,
+    "**/.gh-pages": true,
+    "**/bower_components": true,
+    "**/build": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/node_modules": true
+  },
   "spellright.documentTypes": ["markdown", "plaintext", "mdx"],
+  "spellright.language": ["en"],
   "spellright.parserByClass": {
     "mdx": {
       "parser": "markdown"
     }
   },
-  "turboConsoleLog.quote": "'",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.scrollback": 10000, // Higher = more memory https://github.com/Microsoft/vscode/issues/63452#issuecomment-441796199
   "turboConsoleLog.includeFileNameAndLineNum": false,
-  "editor.stickyScroll.enabled": true,
-  "xstate.nestTypegenFiles": false,
-  "explorer.fileNesting.patterns": {
-    "*.ts": "${capture}.js",
-    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
-    "*.jsx": "${capture}.js",
-    "*.tsx": "${capture}.ts",
-    "tsconfig.json": "tsconfig.*.json",
-    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml"
-  },
-  "markdown-preview-enhanced.previewTheme": "atom-light.css"
+  "turboConsoleLog.quote": "'",
+  "typescript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "window.zoomLevel": -0.5,
+  "workbench.activityBar.visible": false,
+  "workbench.colorTheme": "Night Owl",
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": false,
+  "workbench.editor.limit.value": 6,
+  "workbench.editor.showTabs": false,
+  "workbench.editor.tabCloseButton": "off",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.panel.defaultLocation": "right",
+  "workbench.settings.editor": "json",
+  "workbench.startupEditor": "none",
+  "workbench.statusBar.visible": false,
+  "xstate.nestTypegenFiles": false
 }
