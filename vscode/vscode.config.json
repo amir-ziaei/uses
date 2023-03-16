@@ -27,12 +27,14 @@
   "editor.inlineSuggest.enabled": true,
   "editor.lightbulb.enabled": false,
   "editor.minimap.enabled": false,
-  "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "boundary",
-  "editor.rulers": [{
-    "color": "#0E273B",
-    "column": 80
-  }, 100],
+  "editor.rulers": [
+    {
+      "color": "#0E273B",
+      "column": 80
+    },
+    100
+  ],
   "editor.smoothScrolling": true,
   "editor.snippetSuggestions": "top",
   "editor.stickyScroll.enabled": true,
@@ -47,16 +49,21 @@
   "emmet.showAbbreviationSuggestions": false,
   "emmet.showExpandedAbbreviation": "never",
   "eslint.packageManager": "npm",
-  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
     "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
     "*.jsx": "${capture}.js",
-    "*.ts": "${capture}.js",
     "*.tsx": "${capture}.ts",
-    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml",
-    "tsconfig.json": "tsconfig.*.json"
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml"
   },
   "explorer.openEditors.visible": 0,
   // "files.associations": {
@@ -114,8 +121,7 @@
   },
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.fontSize": 15,
-  "terminal.integrated.scrollback": 10000,
-  // Higher = more memory https://github.com/Microsoft/vscode/issues/63452#issuecomment-441796199
+  "terminal.integrated.scrollback": 10000, // Higher = more memory https://github.com/Microsoft/vscode/issues/63452#issuecomment-441796199
   "turboConsoleLog.includeFileNameAndLineNum": false,
   "turboConsoleLog.quote": "'",
   "typescript.suggest.autoImports": true,
