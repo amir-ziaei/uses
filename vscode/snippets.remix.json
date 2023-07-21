@@ -1,0 +1,91 @@
+{
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  // "Print to console": {
+  //   "scope": "javascript,typescript",
+  //   "prefix": "log",
+  //   "body": [
+  //     "console.log('$1');",
+  //     "$2"
+  //   ],
+  //   "description": "Log output to console"
+  // }
+  "Remix Loader": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "rmxLoader",
+    "body": [
+      "import { json, type DataFunctionArgs } from \"@remix-run/node\"",
+      "import { useLoaderData } from \"@remix-run/react\"",
+      "",
+      "export async function loader({request}: DataFunctionArgs) {",
+      "  return json({});",
+      "};",
+      ""
+    ]
+  },
+  "Remix Action": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "rmxAction",
+    "body": [
+      "import { redirect, json, type DataFunctionArgs } from \"@remix-run/node\"",
+      "import { useActionData } from \"@remix-run/react\"",
+      "",
+      "export async function action({request}: DataFunctionArgs) {",
+      "  const formData = await request.formData();",
+      "  $0",
+      "};",
+      ""
+    ]
+  },
+  "Remix Route Component": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "rmxComponent",
+    "body": [
+      "export default function $0() {",
+      "  const data = useLoaderData<typeof loader>();",
+      "",
+      "  return null;",
+      "}"
+    ]
+  },
+  "Remix CatchBoundary": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "rmxCatchBoundary",
+    "body": [
+      "export function CatchBoundary() {",
+      "  const caught = useCatch();",
+      "",
+      "  if (caught.status === 404) {",
+      "    return (",
+      "      <div>",
+      "        Not found",
+      "      </div>",
+      "    );",
+      "  }",
+      "",
+      "  throw new Error(`Unexpected caught response with status: ${caught.status}`);",
+      "}"
+    ]
+  },
+
+  "Remix ErrorBoundary": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "rmxErrorBoundary",
+    "body": [
+      "export function ErrorBoundary({ error }: { error: Error }) {",
+      "  console.error(error);",
+      "",
+      "  return (",
+      "    <div>",
+      "      An unexpected error occurred: {error.message}",
+      "    </div>",
+      "  );",
+      "}"
+    ]
+  }
+}
